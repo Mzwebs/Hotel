@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hote de Cahors</title>
+
+    <link rel="stylesheet" href="asset/css/language.css">
+    <link rel="stylesheet" href="asset/css/chambre.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+    <!--Logo est le partie du menue de la page avec le titre commence par ici-->
+    <div class="logo">
+        <div class="drop-down">
+            <button class="drop-btn">Langues</button>
+            <div class="drop-down-content">
+                <a href="chambre.html">Français</a>
+                <a href="chambre.html">Anglais</a>
+                <a href="chambre.html">Espagniole</a>
+            </div>
+        </div>
+        <a href="index.html"><img src="asset/imgs/logo.png"></a>
+        <div class=nom-de-hotel>
+            <p><b>HOTEL DE CAHORS</b>
+                <br />Le meillure hotel du Lot</p>
+        </div>
+
+    </div>
+
+    <div class="topnav" id="myTopnav">
+
+        <a href="index.html" class="active">Nos chambres</a>
+        <a href="#news">Nos services</a>
+        <a href="#contact">Nos tarifs</a>
+        <div class="dropdown">
+            <button class="dropbtn">Notre restaurant
+
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Infos pratiques 
+                    </a>
+                <a href="#">Le chef 
+                    </a>
+                <a href="#">La carte</a>
+            </div>
+        </div>
+        <a href="#about">Contactez-nous</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+    </div>
+
+    <!--Le titer de l chambre avec la photo de lachmbre et ses descriptions commence par ici-->
+    <div class="nos-contactez">
+        <h1>La Chambre à Budget</h1>
+
+    </div>
+
+    <main class="grid">
+
+        <article>
+            <img src="asset/imgs/chambres/11.jpg" alt="issue image">
+            <div class="text">
+                <h2>La Chambre à Votre Budget</h2>
+                <h3>prix à la nuitée: 50€</h3>
+                <h4>Description:</h4>
+                <p>Quelsues phrase pour la description de la chmbre Quelsues phrase
+                    <br>pour la description de la chmbre Quelsues phrase pour la descriptin </p>
+                <p> Nombre des places: <b>2</b></p>
+
+                <p> Le type du lit: <b>Double</b></p>
+
+                <p>Le type de salle de bain: <b>Bain et Douche</b></p>
+
+                <p>La superficie: <b>Terrase vers le jardin</b></p>
+
+                <p>L'accès handicapé: <b>Oui</b></p>
+
+                <p>le prix à la nuitée: <b>50€</b></p>
+
+            </div>
+        </article>
+
+    </main>
+
+    <!--une formulaire du contact pour reservation de la chambre commence par ici-->
+    <div class="container">
+        <h1>Reservation</h1>
+        <form action="/action_page.php">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">Nom</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Prènom</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Date D'Arriver</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="arriver" name="Date D'Arriver" placeholder="jj/mm/aa">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Date De Sortir</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="sortir" name="Date De Sortir" placeholder="jj/mm/aa">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Prix Total</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="prix" name="Prix Total" placeholder="000 €">
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" id="sub-btn" value="Reserver" onClick="parent.location='chambre.html'">
+            </div>
+        </form>
+    </div>
+
+    <!--Le partie Nos service avec le nom de service une photo et un description courte commence par ici-->
+    <div class="row-of-section">
+        <h1>Nos Services</h1>
+        <div class="column" style="background-color:#333; color:rgb(218, 213, 213);">
+            <h2>Wifi Gratuit</h2>
+            <img src="asset/imgs/icons/Wifi_logo.svg.png" alt="wifi" style="width:40%">
+            <p>gratuit dans tout l'hôtel</p>
+        </div>
+        <div class="column" style="background-color:#333; color:rgb(218, 213, 213);">
+            <h2>Journaux gratuit</h2>
+            <img src="asset/imgs/icons/index.png" alt="wifi" style="width:40%">
+            <p>En consultation au salon</p>
+        </div>
+        <div class="column" style="background-color:#333; color:rgb(218, 213, 213);">
+            <h2>Ascenseur</h2>
+            <img src="asset/imgs/icons/elevator_lift-512.png" alt="wifi" style="width:40%">
+            <p>à partir du 1er étage</p>
+        </div>
+    </div>
+
+    <!--La carte d'access responsive avec le point d'adresse commence par ici-->
+    <div class="map-responsive">
+        <h4>Pont Valentré. 46000, Cahors</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.4190513821795!2d1.4294899504664085!3d44.44507780878007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ac896853d531dd%3A0xfcd52708bebfabfe!2sPont+Valentr%C3%A9!5e0!3m2!1sen!2sfr!4v1554315523026!5m2!1sen!2sfr" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <!--Le address, téléphone et lien vers le site de mention légale commence par ici-->
+    <div class="footer">
+
+        <div class="contain">
+            <div class="col">
+                <h1>Addresse</h1>
+                <ul>
+                    <li>Pont Valentré, Cahors</li>
+
+                </ul>
+            </div>
+
+            <div class="col">
+                <h1>Téléphone</h1>
+                <ul>
+                    <li>123 123 123</li>
+
+                </ul>
+            </div>
+            <div class="col">
+                <h1> Mention</h1>
+                <ul>
+                    <li>lien vers la page des mentions légales</li>
+
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+   
+
+    <script src="asset/js/app.js"></script>
+</body>
+
+</html>
